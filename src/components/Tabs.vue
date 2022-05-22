@@ -9,16 +9,44 @@
                 <a href="#"><span class="text">Payemnts</span></a>
             </div>
             <div class="rhs">
-                <button class="btn btn-1">Settings</button>
-                <button class="btn btn-2">Export</button>
+                <button class="btnn btn-1">Settings</button>
+                <button class="btnn btn-2">Export</button>
             </div>
         </div>
         <br>
-        <div class="social-media">
-                <button class="bttn insta"><i class="fa-brands fa-instagram"></i></button>
-                <button class="bttn facebook"><i class="fa-brands fa-facebook-f"></i></button>
-                <button class="bttn youtube"><i class="fa-brands fa-youtube"></i></button>
-                <button class="bttn twitter"><i class="fa-brands fa-twitter"></i></button>
+        <div class="cont">
+            <div class="container2">
+                <div class="social-media shadow-3">
+                    <div class="bttn insta shadow-inner" style="background:linear-gradient(100deg,#E4914C,#C74D7B) ; color:#FFFFFF"><i class="fa-brands fa-instagram" ></i></div>
+                    <div class="bttn facebook"><i class="fa-brands fa-facebook-f" style="color:#395798"></i></div>
+                    <div class="bttn youtube"><i class="fa-brands fa-youtube" style="color:#FF0000"></i></div>
+                    <div class="bttn twitter"><i class="fa-brands fa-twitter" style="color:#149EF2"></i></div>
+                </div>
+                <div class="option shadow-3">
+                    <div class="post shadow-3">
+                        <div>
+                            <i class="fa-regular fa-image"></i>
+                        </div>
+                        <div>
+                            <span>Post</span>
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div>
+                            <i class="fa-solid fa-image-portrait"></i>
+                        </div>
+                        <div>
+                            <span>Story</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container3">
+                <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
+                    <input placeholder="Select date" type="date" id="example" class="form-control">
+                    <!-- <label for="example">Try me...</label> -->
+                </div>
+            </div>
         </div>
     </section>
 </template>
@@ -26,6 +54,11 @@
 <script>
 export default {
     name:"Tabs",
+    // data(){
+    //     $('.datepicker').datepicker({
+    //     inline: true    
+    //     });
+    // }
 }
 </script>
 
@@ -76,22 +109,67 @@ export default {
         color: white;
         font-weight: bold;
     }
-    .btn{
+    .btnn{
         width: 200px;
         height: 50px;
+        border: none;
         border-radius: 10px;
     }
     .social-media{
-        box-shadow: 20px;
+        display: flex;
         margin-left: 30px;
+        gap: 5px;
+        height:60px;
+        border-radius:10px;
     }
     .facebook ,.insta ,.youtube ,.twitter{
         font-size: 20px;
         padding: 15px;
+        border-radius:8px 0px 0px 8px;
     }
     .bttn{
         width: 200x;
         height: 60px;
+        border: black;
+    }
+    .container2{
+        display: flex;
+        gap: 50px;
+    }
+    .option{
+        display: flex;
+        /* display: inline; */
+        gap: 5px;
+        /* width: 230px; */
+        /* height:60px; */
+        border-radius:8px;
+        align-items:center;
+        justify-content: start;
+    }
+    .post , .story{
+        display:flex;
+        /* height: 60px; */
+        font-weight: bold;
+        /* border: 10px; */
         box-shadow: 20px;
+        align-items:center;
+        border-radius:8px 0px 0px 8px;
+        /* justify-items: center; */
+        justify-content: space-around;
+        gap: 10px;
+        padding: 10px 20px;
+    }
+    .post{
+        /* width:90px; */
+        background-color: #7E7E7E;
+        color: white;
+    }
+    .story{
+        /* width:90px; */
+    }
+    @import '~mdb-ui-kit/css/mdb.min.css';
+    .cont{
+        display: flex;
+        justify-content: space-between;
     }
 </style>
