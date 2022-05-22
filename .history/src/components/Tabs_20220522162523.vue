@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="container3">
-                <div class="md-form md-outline input-with-post-icon datepicker" inline="true">
+                <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker" inline="true">
                     <input placeholder="Select date" type="date" id="example" class="form-control">
                     <!-- <label for="example">Try me...</label> -->
                 </div>
@@ -54,7 +54,11 @@
 <script>
 export default {
     name:"Tabs",
-
+    // data(){
+    //     $('.datepicker').datepicker({
+    //     inline: true    
+    //     });
+    // }
 }
 </script>
 
