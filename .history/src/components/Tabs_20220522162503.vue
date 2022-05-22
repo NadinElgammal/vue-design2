@@ -131,7 +131,6 @@ export default {
     .bttn{
         padding: 7px 15px;
         border: none;
-        background-color: transparent;
     }
     .container2{
         display: flex;

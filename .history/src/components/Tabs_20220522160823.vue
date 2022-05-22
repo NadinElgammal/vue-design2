@@ -17,10 +17,10 @@
         <div class="cont">
             <div class="container2">
                 <div class="social-media shadow-3">
-                    <button class="bttn insta shadow-inner" style="background:linear-gradient(100deg,#E4914C,#C74D7B) ; color:#FFFFFF"><i class="fa-brands fa-instagram" ></i></button>
-                    <button class="bttn facebook"><i class="fa-brands fa-facebook-f" style="color:#395798"></i></button>
-                    <button class="bttn youtube"><i class="fa-brands fa-youtube" style="color:#FF0000"></i></button>
-                    <button class="bttn twitter"><i class="fa-brands fa-twitter" style="color:#149EF2"></i></button>
+                    <div class="bttn insta shadow-inner" style="background:linear-gradient(100deg,#E4914C,#C74D7B) ; color:#FFFFFF"><i class="fa-brands fa-instagram" ></i></div>
+                    <div class="bttn facebook"><i class="fa-brands fa-facebook-f" style="color:#395798"></i></div>
+                    <div class="bttn youtube"><i class="fa-brands fa-youtube" style="color:#FF0000"></i></div>
+                    <div class="bttn twitter"><i class="fa-brands fa-twitter" style="color:#149EF2"></i></div>
                 </div>
                 <div class="option shadow-3">
                     <div class="post shadow-3">
@@ -122,22 +122,20 @@ export default {
         gap: 10px;
         
         margin-left: 30px;
-        box-shadow: 0 4px 6px -1px rgba(0,0,0,.07),0 2px 4px -1px rgba(0,0,0,.05);
+        /* border-radius:10px; */
     }
     .facebook ,.insta ,.youtube ,.twitter{
         font-size: 20px;
         border-radius:8px 0px 0px 8px;
     }
     .bttn{
+        border: black;
         padding: 7px 15px;
-        border: none;
-        background-color: transparent;
     }
     .container2{
         display: flex;
         justify-content: start;
         align-items: flex-start;
-        gap: 50px;
     }
     .option{
         display: flex;
@@ -145,7 +143,6 @@ export default {
         align-items: flex-start;
 
         border-radius:8px;
-        box-shadow: 0 4px 6px -1px rgba(0,0,0,.07),0 2px 4px -1px rgba(0,0,0,.05);
     }
     .post , .story{
         display: flex;
@@ -166,10 +163,10 @@ export default {
     .story{
         /* width:90px; */
     }
-    /* @import '~mdb-ui-kit/css/mdb.min.css'; */
+    @import '~mdb-ui-kit/css/mdb.min.css';
     .cont{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
     }
 </style>

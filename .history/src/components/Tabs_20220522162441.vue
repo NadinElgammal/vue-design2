@@ -18,9 +18,9 @@
             <div class="container2">
                 <div class="social-media shadow-3">
                     <button class="bttn insta shadow-inner" style="background:linear-gradient(100deg,#E4914C,#C74D7B) ; color:#FFFFFF"><i class="fa-brands fa-instagram" ></i></button>
-                    <button class="bttn facebook"><i class="fa-brands fa-facebook-f" style="color:#395798"></i></button>
-                    <button class="bttn youtube"><i class="fa-brands fa-youtube" style="color:#FF0000"></i></button>
-                    <button class="bttn twitter"><i class="fa-brands fa-twitter" style="color:#149EF2"></i></button>
+                    <div class="bttn facebook"><i class="fa-brands fa-facebook-f" style="color:#395798"></i></div>
+                    <div class="bttn youtube"><i class="fa-brands fa-youtube" style="color:#FF0000"></i></div>
+                    <div class="bttn twitter"><i class="fa-brands fa-twitter" style="color:#149EF2"></i></div>
                 </div>
                 <div class="option shadow-3">
                     <div class="post shadow-3">
@@ -131,7 +131,6 @@ export default {
     .bttn{
         padding: 7px 15px;
         border: none;
-        background-color: transparent;
     }
     .container2{
         display: flex;
