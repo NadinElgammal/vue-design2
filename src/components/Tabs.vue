@@ -17,7 +17,7 @@
         <div class="cont">
             <div class="container2">
                 <div class="social-media shadow-3">
-                    <button class="bttn insta shadow-inner" style="background:linear-gradient(100deg,#E4914C,#C74D7B) ; color:#FFFFFF"><i class="fa-brands fa-instagram" ></i></button>
+                    <button class="bttn insta shadow-inner" style="background:linear-gradient(100deg,#E4914C,#C74D7B) ; color:#FFFFFF"><i class="fa-brands fa-instagram"></i></button>
                     <button class="bttn facebook"><i class="fa-brands fa-facebook-f" style="color:#395798"></i></button>
                     <button class="bttn youtube"><i class="fa-brands fa-youtube" style="color:#FF0000"></i></button>
                     <button class="bttn twitter"><i class="fa-brands fa-twitter" style="color:#149EF2"></i></button>
@@ -59,113 +59,114 @@ export default {
 </script>
 
 <style scoped>
+    @import url("../assets/css/tabs.css");
     .container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items:start;
-    }
-    .lhs{
-        display: flex;
-        gap: 60px;
-        align-items: center;
-    }
-    .text{
-        color:#b4b4b4;
-    }
-    a:link{
-        text-decoration: none;
-    }
-    a:before{
-        content: "";
-        position: absolute;
-        background-color: #0164fb;
-        height: 3px;
-        width: 0;
-        /* left: 115px; */
-        bottom: 810px;
-        transition: 0.3s;
-        
-    }
-    a:hover:before{
-        width: 70px;
-        font-weight: bold;
-    }
-    .rhs{
-        display: flex;
-        gap: 20px;
-    }
-    .btn-1{
-        background-color: #F2F7FF;
-        color:#0164fb;
-        font-weight: bold;
-    }
-    .btn-2{
-        background-color: #0164fb;
-        color: white;
-        font-weight: bold;
-    }
-    .btnn{
-        width: 200px;
-        height: 50px;
-        border: none;
-        border-radius: 10px;
-    }
-    .social-media{
-        display: flex;
-        justify-content: start;
-        align-items: flex-start;
-        gap: 10px;
-        
-        margin-left: 30px;
-        box-shadow: 0 4px 6px -1px rgba(0,0,0,.07),0 2px 4px -1px rgba(0,0,0,.05);
-    }
-    .facebook ,.insta ,.youtube ,.twitter{
-        font-size: 20px;
-        border-radius:8px 0px 0px 8px;
-    }
-    .bttn{
-        padding: 7px 15px;
-        border: none;
-        background-color: transparent;
-    }
-    .container2{
-        display: flex;
-        justify-content: start;
-        align-items: flex-start;
-        gap: 50px;
-    }
-    .option{
-        display: flex;
-        justify-content: start;
-        align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:start;
+}
+.lhs{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+.text{
+    color:#b4b4b4;
+}
+a:link{
+    text-decoration: none;
+}
+a:before{
+    content: "";
+    position: absolute;
+    background-color: #0164fb;
+    height: 3px;
+    width: 0;
+    /* left: 115px; */
+    bottom: 810px;
+    transition: 0.3s;
+    
+}
+a:hover:before{
+    width: 70px;
+    font-weight: bold;
+}
+.rhs{
+    display: flex;
+    gap: 20px;
+}
+.btn-1{
+    background-color: #F2F7FF;
+    color:#0164fb;
+    font-weight: bold;
+}
+.btn-2{
+    background-color: #0164fb;
+    color: white;
+    font-weight: bold;
+}
+.btnn{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+.social-media{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 10px;
+    
+    margin-left: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.07),0 2px 4px -1px rgba(0,0,0,.05);
+}
+.facebook ,.insta ,.youtube ,.twitter{
+    font-size: 20px;
+    border-radius:8px 0px 0px 8px;
+}
+.bttn{
+    padding: 7px 15px;
+    border: none;
+    background-color: transparent;
+}
+.container2{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 50px;
+}
+.option{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
 
-        border-radius:8px;
-        box-shadow: 0 4px 6px -1px rgba(0,0,0,.07),0 2px 4px -1px rgba(0,0,0,.05);
-    }
-    .post , .story{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+    border-radius:8px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.07),0 2px 4px -1px rgba(0,0,0,.05);
+}
+.post , .story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 
-        padding: 10px 20px;
-        font-weight: bold;
-        box-shadow: 20px;
-        border-radius:8px 0px 0px 8px;
-    }
-    .post{
-        /* width:90px; */
-        background-color: #7E7E7E;
-        color: white;
-    }
-    .story{
-        /* width:90px; */
-    }
-    /* @import '~mdb-ui-kit/css/mdb.min.css'; */
-    .cont{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    padding: 10px 20px;
+    font-weight: bold;
+    box-shadow: 20px;
+    border-radius:8px 0px 0px 8px;
+}
+.post{
+    /* width:90px; */
+    background-color: #7E7E7E;
+    color: white;
+}
+.story{
+    /* width:90px; */
+}
+/* @import '~mdb-ui-kit/css/mdb.min.css'; */
+.cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 </style>
